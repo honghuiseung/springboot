@@ -34,7 +34,7 @@ public class FilterListenerServlet extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		
 		out.println("<form method='post' action='FilterListenerServlet'>");
-		//doPost½ÇÇà
+		//doPostì‹¤í–‰
 		out.println("name : <input type= 'text' name='id' />");
 		out.println("<input type = 'submit'/>");
 		out.println("</form>");
@@ -51,10 +51,10 @@ public class FilterListenerServlet extends HttpServlet {
 		
 		HttpSession session = request.getSession();
 		session.setAttribute("id",new String(id));
-		//id¿¡ ÀúÀåµÈ °ªÀ» È­¸é¿¡ Ãâ·Â
+		//idì— ì €ì¥ëœ ê°’ì„ í™”ë©´ì— ì¶œë ¥
 		
 		PrintWriter out = response.getWriter();
-		out.println(id+" ·Î ·Î±×ÀÎ µÇ¾ú½À´Ï´Ù.");
+		out.println(id+" ë¡œ ë¡œê·¸ì¸ ë˜ì—ˆìŠµë‹ˆë‹¤.");
 	}
 
 }

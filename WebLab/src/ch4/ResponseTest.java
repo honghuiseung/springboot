@@ -29,12 +29,12 @@ public class ResponseTest extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html; charset=EUC-KR");
-		response.setHeader("cache-control","no-cache");
-		response.setHeader("expire","0");
+		response.setHeader("cache-control","no-cache"); //쿠기 없음으로 셋팅
+		response.setHeader("expire","0"); //0 = 서버를 끄면 바로 쿠키가 삭제된다. 1 = 하루동안 유지된다.
 		
 		PrintWriter out = response.getWriter();
 		out.println("<h1>HelloWorld</h1><br/>");
-		out.println("<h1>�ȳ��ϼ���..</h1>");
+		out.println("<h1>안녕하세요..</h1>");
 	}
 
 	/**

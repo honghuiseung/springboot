@@ -23,7 +23,7 @@ public class CountSessionListener implements HttpSessionAttributeListener {
      */
     public void attributeAdded(HttpSessionBindingEvent se)  { 
          sessionCount++;
-         System.out.println("ÇöÀç Á¢¼ÓÀÚ´Â " + sessionCount + "¸í ÀÔ´Ï´Ù.");
+         System.out.println("ì ‘ì†ì ìˆ˜ " + sessionCount + "ëª….");
     }
 
 	/**

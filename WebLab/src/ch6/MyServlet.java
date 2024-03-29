@@ -55,6 +55,5 @@ public class MyServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		doGet(request, response);
 	}
-	//°á·Ğ : web.xml ÆÄÀÏÀÌ µî·Ï ¶Ç´Â AnnotationÀ¸·Î ServletÀ¸·Î µî·ÏÇØ »ç¿ë°¡´É
-
+	//ê²°ë¡  : web.xml íŒŒì¼ì´ ë“±ë¡ ë˜ëŠ” Annotationìœ¼ë¡œ Servletìœ¼ë¡œ ë“±ë¡í•´ ì‚¬ìš©ê°€ëŠ¥
 }

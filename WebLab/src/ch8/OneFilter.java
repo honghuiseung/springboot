@@ -34,9 +34,9 @@ public class OneFilter implements Filter {
 	 */
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
 		System.out.println("OneFilter before...");
-		String id = request.getParameter("id"); //request, response ÆÄ¶ó¹ÌÅÍ¸¦ ÇÊÅÍ¿¡¼­µµ ¾µ ¼ö ÀÖÀ½
+		String id = request.getParameter("id");
 		if(id != null) {
-			System.out.println(id+" ·Î ·Î±×ÀÎÀÌ ½Ãµµ µÇ¾ú½À´Ï´Ù.");
+			System.out.println(id+"ë¡œ ë¡œê·¸ì¸ì´ ì‹œë„ ë˜ì—ˆìŠµë‹ˆë‹¤.");
 		}
 		
 		chain.doFilter(request, response);
