@@ -1,15 +1,16 @@
 ﻿$(function(){
-	//자주찾는 검색
+	//자주찾는 검색 변수
 	var banner_slide;
 	var arrow_btn;
 	var btn_click;
 	var arrow_down;
 	var arrow_up;
 	
-	//보조금24 애니메이션
+	//보조금24 애니메이션 변수
 	var menu;
 	var tc;
 	var menu_image;
+	var menu_image_fixed;
 	var image_width_px;
 	var image_width;
 	
@@ -62,6 +63,46 @@
 	banner.hover(stop_timer,start_timer);
 	start_timer();
 	
+	//로그인
+	var $login_yet_page = $("#section_top #section_top_right .login_yet");
+	var $login_done_page = $("#section_top #section_top_right .login_done");
+	var $login_btn = $("#section_top #section_top_right .login_button");
+	var $logout_btn = $("#section_top #section_top_right .logout_button");
+	var $login_extent_btn = $("#section_top #section_top_right .login_button");
+	
+	$logout_btn.click(function(){
+		$login_yet_page.show();
+		$login_done_page.hide();
+		reset_count();
+	});
+	
+	$login_btn.click(function(){
+		$login_yet_page.hide();
+		$login_done_page.show();
+		start_count();
+		show_login_time();
+	});
+	
+	//로그인(카운트)
+	var $login_m_10 = $("#section_top #section_top_right .num_m .tenth");
+	var $login_m_1 = $("#section_top #section_top_right .num_m .unit");
+	var $login_s_10 = $("#section_top #section_top_right .num_s .tenth");
+	var $login_s_1 = $("#section_top #section_top_right .num_s .unit");
+	
+	function show_login_time(){
+		var end_login_time = logout_count();
+		$login_m_10.text(end_login_time.m_10);
+		$login_m_1.text(end_login_time.m_1);
+		$login_s_10.text(end_login_time.s_10);
+		$login_s_1.text(end_login_time.s_1);
+		
+		if(end_login_time.is_start)
+		setTimeout(show_login_time,1000);
+		
+		
+	}
+	
+	
 	
 	//메뉴 슬라이드업다운
 	$('#contents_col4_left .box_right').each(function(){//메모리에 상주하기 때문에 새탭에서 열어야함
@@ -107,15 +148,18 @@
 	menu =  $('#contents_col3_left ul li');
 	tc = $('#contents_col3_left ul li').eq(0);
 	menu_image = tc.find('.img');
+	menu_image_fixed = tc.find('.img_ec');
 	image_width_px = menu_image.css('width');
 	image_width = image_width_px.replace('px','');
 	
 	function open(){
 		menu_image.animate({width:image_width},{duration:600,queue:false,easing:'easeOutCubic'});		
+		menu_image_fixed.animate({width:0},{duration:600,queue:false,easing:'easeOutCubic'});	
 	}
 	
 	function close(){
 		menu_image.animate({width:0},{duration:600,queue:false,easing:'easeOutCubic'});
+		menu_image_fixed.animate({width:image_width},{duration:600,queue:false,easing:'easeOutCubic'});
 	}
 	
 	function close_all(){
@@ -130,16 +174,19 @@
 	menu.each(function(){
 		tc = $(this);
 		var menu_image = tc.find('.img');	
+		var menu_image_fixed = tc.find('.img_ec');	
 		
 		tc.hover(
 			function(){
 				close();
 				image_width = menu_image.css('width');	
 				image_width = image_width_px.replace('px','');
-				menu_image.animate({width:image_width},{duration:600,queue:false,easing:'easeOutCubic'});				
+				menu_image.animate({width:image_width},{duration:600,queue:false,easing:'easeOutCubic'});	
+				menu_image_fixed.animate({width:0},{duration:600,queue:false,easing:'easeOutCubic'});				
 			}, 
 			function(){			
 				menu_image.animate({width:0},{duration:600,queue:false,easing:'easeOutCubic'});	
+				menu_image_fixed.animate({width:image_width},{duration:600,queue:false,easing:'easeOutCubic'});	
 				open();
 			}
 		);
@@ -177,7 +224,6 @@
 	
 	function slide_banner(banner, is_next){
 		var btm_cnt = banner.eq(count);
-		console.log(btm_cnt);
 		if(is_next){
 			count++;
 			if (count == banner.size()){

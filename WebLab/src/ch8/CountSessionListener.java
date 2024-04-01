@@ -23,7 +23,7 @@ public class CountSessionListener implements HttpSessionAttributeListener {
      */
     public void attributeAdded(HttpSessionBindingEvent se)  { 
          sessionCount++;
-         System.out.println("접속자 수 " + sessionCount + "명.");
+         System.out.println("접속자 수 :" + sessionCount + "명.");
     }
 
 	/**

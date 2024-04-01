@@ -9,7 +9,7 @@ ul, li{list-style:none;}
 h3, p{color:#333333; letter-spacing:-2px;}
 
 /* 페이지 시작 */
-#wrap{height: 1814px; background:url(../images/back.png)no-repeat top center;}
+#wrap{height: 1814px;}
 
 /* header 맨윗줄 */ 
 #top_nb_wrap{height:40px; background-color:#033075;} 
@@ -62,7 +62,7 @@ h3, p{color:#333333; letter-spacing:-2px;}
 /* section 시작 */
 
 /* Home>로그인 */	
-	#section{height:1171px;}
+	#section{height:1271px;}
 	#section_top_wrap{height:44px;}
 		#section_top{height:44px;
 		 text-align:right; line-height:44px; font-weight:bold; font-size: 0.9em; letter-spacing:-1.5px;}
@@ -71,8 +71,8 @@ h3, p{color:#333333; letter-spacing:-2px;}
 		 #section_middle .col1{width:1260px; height:364px; margin:73px auto 0 auto;}
 		 
 			.fixed_banner{width:400px; height:364px; background:rgba(0,255,0,0.3); border-radius:20px;}
-			.fixed_banner p{width: 323px; margin-left:34px; margin-top: 21px; font-size:1.05em; line-height: 27px; font-weight: bold; border-bottom: 1px solid #999999; padding-bottom: 14px;}
-			.fixed_banner .title{font-size:2.0em;width: 300px; height:90px; margin-top:48px; text-align:justify; line-height:45px; letter-spacing:-5px; padding:0; border:0;}
+			.fixed_banner p{width: 323px; margin-left:34px; margin-top: 21px; font-size:1.05em; line-height: 27px; font-weight: bold; border-bottom: 1px solid #999999; padding-bottom: 14px; letter-spacing:-1px;}
+			.fixed_banner .title{font-size:2.0em;width: 300px; height:90px; margin-top:48px; text-align:justify; line-height:45px; letter-spacing:-5px; padding:0; border:0; float:none; margin-bottom:0;}
 			
 			.slide_banner{position:relative;width:400px; height:364px; overflow:hidden;}
 			.slide_banner.first{margin: 0 30px;}
@@ -105,10 +105,6 @@ h3, p{color:#333333; letter-spacing:-2px;}
 			.first .slide_banner_cont ul>li{color:#ffffff; }
 			.second .slide_banner_cont ul>li.first{color:#036ae2;}
 			.second .slide_banner_cont ul>li{color:#333333; }
-		 
-	
-
-
 					
 /* footer 시작 */	
 	#footer_wrap{background-color:#f5f7fa;}

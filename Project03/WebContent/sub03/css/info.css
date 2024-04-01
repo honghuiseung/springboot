@@ -87,7 +87,7 @@ h3, p{color:#333333; letter-spacing:-2px;}
 			.searchbox input[type="text"]{height: 41px; margin-left: 17px; width: 308px; font-size:0.9em;}
 			.searchbox input[type="button"]{height: 43px;margin-left: 251px; margin-top: 0px; padding: 3px 8px 4px 8px; width: 78px; font-size: 1em; background-color:#504e4b; color: #ffffff; border: 1px solid #3e3b38; cursor: pointer;}
 			.searchbox input[type="checkbox"]{margin-left: 251px; margin-top: 8px; width:28px; height:28px; font-weight:bold;}
-			.searchbox .search_text{margin-left: 200px; margin-top: 12px; width:100px;}
+			.searchbox .search_text{margin-left: 200px; margin-top: 12px; width:110px;}
 			
 			/* 전체... */
 			#info_contents{margin-bottom: 47px;height:1620px;}

@@ -9,28 +9,28 @@
 					</div><!-- top_nb_left end -->
 					<div id="top_nb_right"> 
 						<div class="not_last fl"><a href="#" class="fl">for foreigner</a></div>
-						<div class="not_last fl"><a href="#" class="fl"><div class="fl">어린이</div></a><a href="#" class="fl"><img class="blank fl" src="images/icon_blank_white.png" alt="새 페이지"/></a></div>
+						<div class="not_last fl"><a href="#" class="fl"><div class="fl">어린이</div></a><a href="#" class="fl"><img class="blank fl" src="./images/icon_blank_white.png" alt="새 페이지"/></a></div>
 						<div class="not_last fl"><a href="#" class="fl">정부24소개</a></div>
 						<div class="not_last fl"><a href="#" class="fl" id="login">로그인</a></div>
 						<div class="not_last fl"><a href="#" class="fl">인증센터</a></div>
 						<div class="fl"><a href="#" class="fl">화면크기</a></div>
-						<div class="fl"><a href="#" class="fl"><img class="minus fl" src="images/icon_smlr.png" alt="축소"/><div class="fl">100%</div><img class="plus fl" src="images/icon_lgr.png" alt="확대"/></a></div>
+						<div class="fl"><a href="#" class="fl"><img class="minus fl" src="./images/icon_smlr.png" alt="축소"/><div class="fl">100%</div><img class="plus fl" src="./images/icon_lgr.png" alt="확대"/></a></div>
 					</div><!-- top_nb_right end -->
 				</div><!-- top_nb end -->
 			</div><!-- top_nb_wrap end -->
 				<div id="gnb_wrap">
 					<div id="gnb" class="center">
 						<div id="gnb_left" class="fl">
-							<a href="#"><img src="images/logo3.png" alt="로고입니다." title="메인페이지로 이동합니다."/></a>
+							<a href="#"><img src="./images/logo3.png" alt="로고입니다." title="메인페이지로 이동합니다."/></a>
 						</div><!-- gnb_left end -->
 						<div id="gnb_center" class="fl">
 							<ul class="one_depth fl">
 								<li>
-									<a href="sub01/login.html" class="fl" tabindex="1"><h2 title="로그인페이지로 이동합니다.">MyGOV</h2></a>
+									<a href="./sub01/login.jsp" class="fl" tabindex="1"><h2 title="로그인페이지로 이동합니다.">MyGOV</h2></a>
 									<div class="two_depth_wrap">
 										<dl class="two_depth center">
 											<dt class="fl">
-												<img src="images/ico_menu1.png" alt="MyGOV"/>
+												<img src="./images/ico_menu1.png" alt="MyGOV"/>
 												<div class="caption">MyGOV</div>
 												<div class="caption_subtext">서비스 신청현황 생활정보 확인 및<br/>회원정보 설정을 할 수 있어요.</div>
 											</dt>	
@@ -50,11 +50,11 @@
 									</div>
 								</li>
 								<li>
-									<a href="sub02/board.html"><h2  title="게시판페이지로 이동합니다.">민원서비스</h2></a>
+									<a href="./sub02/board.jsp"><h2  title="게시판페이지로 이동합니다.">민원서비스</h2></a>
 									<div class="two_depth_wrap">
 										<dl class="two_depth center">
 											<dt class="fl">
-												<img src="images/ico_menu2.png" alt="민원서비스"/>
+												<img src="./images/ico_menu2.png" alt="민원서비스"/>
 												<div class="caption">민원서비스</div>
 												<div class="caption_subtext">중앙부처, 공공기관, 지자체에서 제공하는<br/>각종 서비스를 신청·조회·발급·확인할 수 있어요.</div>
 											</dt>	
@@ -80,11 +80,11 @@
 									</div>
 								</li>
 								<li>
-									<a href="sub03/info.html"><h2 title="정책정보페이지로 이동합니다.">보조금24</h2></a>
+									<a href="./sub03/info.jsp"><h2 title="정책정보페이지로 이동합니다.">보조금24</h2></a>
 									<div class="two_depth_wrap">
 										<dl class="two_depth center">
 											<dt class="fl">
-												<img src="images/ico_menu3.png" alt="보조금24"/>
+												<img src="./images/ico_menu3.png" alt="보조금24"/>
 												<div class="caption">보조금24</div>
 												<div class="caption_subtext">나와 가족이 받을 수 있는<br/>정부혜택을 확인할 수 있어요.</div>
 											</dt>	
@@ -107,11 +107,11 @@
 									</div>
 								</li>
 								<li>
-									<a href="sub04/sub4.html"><h2 title="로그인페이지로 이동합니다.">정책정보</h2></a>
+									<a href="./sub04/sub4.jsp"><h2 title="로그인페이지로 이동합니다.">정책정보</h2></a>
 									<div class="two_depth_wrap">
 										<dl class="two_depth center">
 											<dt class="fl">
-												<img src="images/ico_menu4.png" alt="정책정보"/>
+												<img src="./images/ico_menu4.png" alt="정책정보"/>
 												<div class="caption">정책정보</div>
 												<div class="caption_subtext">정부에서 운영하는 대표 사이트의 <br/>다양한 정보와 뉴스를 한 곳에서 확인할 수 있어요.</div>
 											</dt>	
@@ -140,11 +140,11 @@
 									</div>
 								</li>
 								<li class="last">
-									<a href="#"><h2 title="게시판페이지로 이동합니다.">고객센터</h2></a>
+									<a href="./sub01/login.jsp"><h2 title="로그인페이지로 이동합니다.">고객센터</h2></a>
 									<div class="two_depth_wrap">
 										<dl class="two_depth center">
 											<dt class="fl">
-												<img src="images/ico_menu5.png" alt="고객센터"/>
+												<img src="./images/ico_menu5.png" alt="고객센터"/>
 												<div class="caption">고객센터</div>
 												<div class="caption_subtext">정부24 이용에 필요한 내용과 <br/>정보를 확인할 수 있어요.</div>
 											</dt>	
@@ -172,8 +172,8 @@
 							</ul>
 						</div><!-- gnb_center end -->
 						<div id="gnb_right">
-							<img src="images/icon_menu.png" class="menu" alt="메뉴"/>
-							<img src="images/icon_search_main.png" class="search" alt="돋보기"/>
+							<img src="./images/icon_menu.png" class="menu" alt="메뉴"/>
+							<img src="./images/icon_search_main.png" class="search" alt="돋보기"/>
 						</div><!-- gnb_right end -->
 					</div><!-- gnb end -->
 				</div><!-- gnb_wrap end -->

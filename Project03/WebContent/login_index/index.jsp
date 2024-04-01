@@ -23,7 +23,7 @@
 <body>
 	<h1>메인페이지입니다.</h1>
 	<div id="wrap">	
-		<%@ include file="include/header.jsp" %>
+		<%@ include file="../include/subheader.jsp" %>
 		<section id="section" >
 			<div id="section_top" class="center">
 				<div id="section_top_left" class="fl division_area_left">
@@ -228,22 +228,22 @@
 						<ul class="fl cl">
 							<li class="swiper_slide swiper_slide1 fl">
 								<a href="#">
-									<div class="./img_ec"></div><div class="img"></div><div>로그인하고<br/>맞춤안내 조회하기</div>
+									<div class="img_ec"></div><div class="img"></div><div>로그인하고<br/>맞춤안내 조회하기</div>
 								</a>
 							</li>
 							<li class="swiper_slide swiper_slide2 fl">
 								<a href="#">
-									<div class="./img_ec"></div><div class="img"></div><div>로그인없이<br/>간단하게 혜택찾기</div>
+									<div class="img_ec"></div><div class="img"></div><div>로그인없이<br/>간단하게 혜택찾기</div>
 								</a>
 							</li>
 							<li class="swiper_slide swiper_slide3 fl">
 								<a href="#">
-									<div class="./img_ec"></div><div class="img"></div><div>1만여 개의<br/>전체혜택 보기</div>
+									<div class="img_ec"></div><div class="img"></div><div>1만여 개의<br/>전체혜택 보기</div>
 								</a>
 							</li>
 							<li class="swiper_slide swiper_slide4 fl">
 								<a href="#">
-									<div class="./img_ec"></div><div class="img"></div><div>맞춤안내 조회<br/>이용방법 보기</div>
+									<div class="img_ec"></div><div class="img"></div><div>맞춤안내 조회<br/>이용방법 보기</div>
 								</a>
 							</li>
 						</ul>

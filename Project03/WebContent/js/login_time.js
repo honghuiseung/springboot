@@ -10,39 +10,71 @@ function hund(z){ //100의 자리 숫자
 	var m = Math.floor(z/100)
 	return m
 }
-doomsday = new Date()
-doomsday.setHours(doomsday.getHours()+1)
+var doomsday = new Date();
+//start_count()
+
+//카운트 하는중
 function ddaycount(){
 	
-	today = new Date()
-	howfar = doomsday - today
+	doomstime = logout_count();
 	
-	if(howfar>0){
-		setTimeout('ddaycount()', 1000);
+	if(doomstime.is_start){
+		setTimeout('ddaycount()', 1000)
 	} else{
 		clearTimeout('ddaycount()') 
-		until_logout = '잠시후 로그아웃됩니다.'
+		until_logout = '로그인 해주세요.'
 		return until_logout
 	}
 	
-	days = Math.floor(howfar/(1000*60*60*24))
-	hours = Math.floor(howfar/(1000*60*60))
-	mins = Math.floor(howfar/(1000*60))
-	secs = Math.floor(howfar/(1000))
 	
-	d = days
-	h = hours - days*24
-	m = mins - hours*60
-	s = secs - mins*60
+	m = doomstime.m;
+	s = doomstime.s;
 	
-	if(d<10) {d='00'+d}else if (d<100){d="0"+d}
-	if(h<10) {h='0'+h}
 	if(m<10) {m='0'+m}
 	if(s<10) {s='0'+s}
 	
 	until_logout = '로그아웃까지 '+m+'분 ' +s+'초 남았습니다.'
-	//document.getElementById('login').setAttribute('title',until_logout)
 	
 	return until_logout
 	
+}
+
+//카운트 알고리즘
+function logout_count(){
+	today = new Date()
+	howfar = doomsday - today
+	
+	hours = Math.floor(howfar/(1000*60*60))
+	mins = Math.floor(howfar/(1000*60))
+	secs = Math.floor(howfar/(1000))
+	
+	class Result {
+		
+		constructor(m,s,m_1,m_10,s_1,s_10,is_start) {
+			this.m = mins - hours*60
+			this.m_1 = (mins - hours*60)%10
+			this.m_10 = Math.floor((mins - hours*60)/10)
+			this.s = secs - mins*60
+			this.s_1 = (secs - mins*60)%10
+			this.s_10 = Math.floor((secs - mins*60)/10)
+			this.is_start = (howfar>0)?true:false;
+		}
+	}
+	
+	time = new Result()
+	console.log(time);
+	
+	return time
+	
+}
+
+function start_count(){
+	today = new Date()
+	today.setHours(today.getHours()+1)
+	doomsday = today;
+}
+
+function reset_count(){
+	today = new Date()
+	doomsday = today;
 }

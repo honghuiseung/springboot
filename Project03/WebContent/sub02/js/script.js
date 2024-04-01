@@ -46,8 +46,7 @@
 			board_body.append(tr);
 			
 			//게시판 내용
-			board_cont_wrap.append(board_cont);
-			
+			board_cont_wrap.append(board_cont);	
 		}
 		
 		//게시판 동작
@@ -56,24 +55,13 @@
 		board_content.hide();
 		
 		board.each(function(){
-		console.log('a');
-		$(this).click(function(){
-			board_content.hide();
-			board.removeClass('on');
-			$(this).addClass('on').find('.board_cont').show();
-			
+			console.log('a');
+			$(this).click(function(){
+				board_content.hide();
+				board.removeClass('on');
+				$(this).addClass('on').find('.board_cont').show();
+			});
 		});
 	});
-	});
-	
-	//툴팁
-	$('#gnb_left a img').tooltip();
-	$('body').tooltip({tg:'#gnb_center .one_depth>li h2'});
-	
-	
-	
-	
-	
-	
 	
 });
